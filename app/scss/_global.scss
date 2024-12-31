@@ -1,0 +1,68 @@
+body {
+    font-family: "Montserrat Alternates", serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: -1.2px;
+    line-height: 1.2;
+    background-color: $light;
+    color: $dark;
+}
+
+.container {
+    max-width: 1512px;
+    margin: 0 auto;
+    padding: 0 64px;
+}
+
+.logo {
+    margin-right: 80px;
+    outline-offset: 5px;
+    border-radius: 20px;
+    transition: opacity 0.4s, outline 0.4s, opacity 0.4s;
+
+    &:hover {
+        opacity: 0.6;
+    }
+
+    &:focus {
+        outline: 1px solid $accent;
+    }
+
+    &:active {
+        opacity: 0.4;
+    }
+}
+
+.section {
+    padding-bottom: 50px;
+}
+
+.title {
+    font-size: 50px;
+    text-align: left;
+    margin-bottom: 18px;
+    font-weight: 600;
+}
+
+.link {
+    display: inline-block;
+    padding: 11px 32px;
+    font-size: 30px;
+    background-color: $accent-opacity;
+    border-radius: 20px;
+    outline: 3px solid $secondary;
+    transition: box-shadow 0.4s, outline-offset 0.4s, background-color 0.4s;
+
+    &:hover {
+        box-shadow: 3px 3px 8px $dark-opacity;
+    }
+
+    &:focus {
+        outline-offset: 5px;
+    }
+
+    &:active {
+        background-color: $secondary;
+    }
+}

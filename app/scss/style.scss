@@ -1,4 +1,6 @@
+@import "reset";
 @import "vars";
-@import "fonts";
 @import "global";
-@import "media";
+
+@import "global/header";
+@import "index/hero";
