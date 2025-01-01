@@ -1,0 +1,71 @@
+.services {
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            z-index: -5;
+            top: -150px;
+            right: -31px;
+            width: 431px;
+            height: 590px;
+            border-radius: 0 0 20px 20px;
+            background-color: $accent-opacity;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            right: 55px;
+            top: 0;
+            width: 256px;
+            height: 256px;
+            background-image: url("../../images/alyonaPoshtarenko.png");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 50%;
+        }
+    }
+
+    &__info {
+        max-width: 955px;
+        width: 100%;
+    }
+
+    &__subtitle {
+        font-size: 30px;
+        margin-bottom: 13px;
+        font-weight: 600;
+    }
+
+    &__description:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    &__link {
+        position: absolute;
+        right: 15px;
+        top: 317px;
+        font-size: 20px;
+        padding: 11px 17px;
+    }
+
+    &__list {
+        list-style: disc;
+        padding-left: 35px;
+    }
+
+    &__subheading {
+        font-weight: 500;
+    }
+}

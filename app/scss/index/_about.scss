@@ -1,0 +1,90 @@
+.about {
+    position: relative;
+    z-index: -5;
+    background-color: $dark;
+    padding-top: 45px;
+    color: $light;
+
+    &__container {
+        display: flex;
+        overflow-x: hidden;
+    }
+
+    &__img {
+        padding-right: 120px;
+        margin-top: 76px;
+    }
+
+    &__content {
+        margin-left: -70px;
+        padding-bottom: 57px;
+    }
+
+    &__title {
+        margin-bottom: 18px;
+    }
+
+    &__subtitle {
+        font-size: 40px;
+        margin-bottom: 13px;
+    }
+
+    &__description {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    &__item {
+        position: relative;
+        display: flex;
+        max-width: 700px;
+        width: 100%;
+    }
+
+    &__item:nth-child(odd) {
+        text-align: left;
+        padding: 22px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: -3;
+            top: 0;
+            right: 0;
+            border-radius: 0 20px 20px 0;
+            width: 100vw;
+            height: 100%;
+            background-color: $secondary;
+        }
+    }
+
+    &__item:nth-child(even) {
+        text-align: right;
+        padding: 22px 34px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            z-index: -3;
+            top: 0;
+            left: 0;
+            border-radius: 20px 0 0 20px;
+            width: 100vw;
+            height: 100%;
+            background-color: $secondary;
+        }
+    }
+
+    &__text {
+        display: inline-block;
+        margin-right: auto;
+        max-width: 640px;
+        width: 100%;
+    }
+}
