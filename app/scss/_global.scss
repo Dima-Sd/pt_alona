@@ -16,6 +16,7 @@ body {
 }
 
 .logo {
+    z-index: -5;
     margin-right: 80px;
     outline-offset: 5px;
     border-radius: 20px;
@@ -63,5 +64,31 @@ body {
 
     &:active {
         background-color: $secondary;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+@media (max-width: 864px) {
+    .header__container {
+        padding-left: 30px;
+        padding-right: 0;
+    }
+
+    .link {
+        font-size: 20px;
+        padding: 11px 37px;
     }
 }

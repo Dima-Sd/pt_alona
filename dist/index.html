@@ -7,11 +7,11 @@
     <title>
         Фізичний терапевт: Альона Поштаренко
     </title>
-    <link rel="icon" type="image/png" href="./images/favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="./images/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="./images/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png" />
-    <link rel="manifest" href="./images/favicon/web-app-manifest-192x192.png" />
+    <link rel="icon" type="image/png" href="./images/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="./images/favicon/favicon.svg">
+    <link rel="shortcut icon" href="./images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="./images/favicon/web-app-manifest-192x192.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600&display=swap"
@@ -26,24 +26,31 @@
                 <a class="logo" href="#">
                     <img class="logo__img" src="./images/logo.svg" alt="Логотип" width="167" height="80">
                 </a>
+                <button class="mobile-button" type="button">
+                    <span class="visually-hidden">
+                        відкрити/закрити мобільне меню
+                    </span>
+                    <span class="mobile-button__line">
+                    </span>
+                </button>
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <a class="menu__link" href="#">
+                        <a class="menu__link" href="#about">
                             Про мене
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#">
+                        <a class="menu__link" href="#services">
                             Мої послуги
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#">
+                        <a class="menu__link" href="#faq">
                             Часті запитання
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#">
+                        <a class="menu__link" href="#instagram">
                             Інстаграм
                         </a>
                     </li>
@@ -57,19 +64,49 @@
                             Фізичний терапевт
                         </span>
                     </h1>
-                    <a class="link" href="https://t.me/PT_Alona">
-                        Записатись на консультацію
+                    <p class="header__title-mob">
+                        Фізична терапія вдома
+                    </p>
+                    <p class="header__text">
+                        Зручний та ефективний підхід до вашого здоровʼя
+                    </p>
+                    <a class="link header__link-mob" href="https://t.me/PT_Alona">
+                        Записатись <span class="header__link">на консультацію</span>
                     </a>
                 </div>
-                <img class="header__img" src="./images/poshtarenkoAlyona.png" alt="Поштаренко Альона" width="610"
-                    height="642">
+                <picture>
+                    <source
+                        srcset="./images/hero/alenaPoshtarenko-mob.webp 1x, ./images/hero/alenaPoshtarenko-mob-2x.webp 2x"
+                        type="image/webp" media="(max-width:864px)">
+                    <source
+                        srcset="./images/hero/alenaPoshtarenko-mob.png 1x, ./images/hero/alenaPoshtarenko-mob-2x.png 2x"
+                        media="(max-width:864px)">
+
+                    <source
+                        srcset="./images/hero/alenaPoshtarenko-tab.webp 1x, ./images/hero/alenaPoshtarenko-tab-2x.webp 2x"
+                        type="image/webp" media="(max-width:1200px)">
+                    <source
+                        srcset="./images/hero/alenaPoshtarenko-tab.png 1x, ./images/hero/alenaPoshtarenko-tab-2x.png 2x"
+                        media="(max-width:1200px)">
+
+                    <source srcset="./images/hero/alenaPoshtarenko.webp 1x, ./images/hero/alenaPoshtarenko-2x.webp 2x"
+                        type="image/webp">
+                    <source srcset="./images/hero/alenaPoshtarenko.png 1x, ./images/hero/alenaPoshtarenko-2x.png 2x">
+                    <img class="header__img" src="./images/hero/alenaPoshtarenko-tab.png" alt="Поштаренко Альона"
+                        width="610" height="642">
+                </picture>
             </div>
         </div>
     </header>
+    <h1 class="visually-hidden">
+        Поштаренко Альона: Фізичний терапевт
+    </h1>
     <main class="main">
-        <section class="about section">
-            <div class="container about__container">
-                    <img class="about__img" src="./images/aboutPoshtarenkoAlyna.png" alt="Поштаренко Альона" width="500" height="615">
+        <!-- <section class="about" id="about">
+            <div class="container">
+                <div class="about__wrap">
+                    <img class="about__img" src="./images/aboutPoshtarenkoAlyna.png" alt="Поштаренко Альона" width="500"
+                        height="615">
                     <div class="about__content">
                         <h2 class="title about__title">
                             Про мене
@@ -82,25 +119,286 @@
                         </p>
                         <ul class="about__list">
                             <li class="about__item">
-                                <span class="about__text">
+                                <p class="about__text">
                                     Мій багаторічний досвід у фізичній терапії навчив мене ставити пацієнта, а не лише
                                     його
                                     діагноз, у центр уваги.Я складаю індивідуальні плани реабілітації, враховуючи ваші
                                     потреби, бажання та навіть хобі.
-                                </span>
+                                </p>
                             </li>
                             <li class="about__item">
-                                <span class="about__text">
+                                <p class="about__text">
                                     Такий підхід дозволяє створити максимально ефективний процес відновлення, який
                                     відповідає вашим запитам та допомагає досягти найкращих результатів
-                                </span>
+                                </p>
                             </li>
                         </ul>
                     </div>
                 </div>
+                <div class="about__inner">
+                    <div class="about__wrapper">
+                        <img class="about__img-mob" src="./images/aboutPoshtarenkoAlyna-mob.png" alt="Поштаренко Альона"
+                            width="270px" height="400px">
+                        <div class="about__content-mob">
+                            <h2 class="title about__title">
+                                Про мене
+                            </h2>
+                            <h3 class="about__subtitle">
+                                Поштаренко Альона
+                            </h3>
+                            <p class="about__description">
+                                Дипломований фізичний терапевт. Борець за доказову та сучасну реабілітацію
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="about__list">
+                        <li class="about__item">
+                            <p class="about__text">
+                                Мій багаторічний досвід у фізичній терапії навчив мене ставити пацієнта, а не лише
+                                його
+                                діагноз, у центр уваги.Я складаю індивідуальні плани реабілітації, враховуючи ваші
+                                потреби, бажання та навіть хобі.
+                            </p>
+                        </li>
+                        <li class="about__item">
+                            <p class="about__text">
+                                Такий підхід дозволяє створити максимально ефективний процес відновлення, який
+                                відповідає вашим запитам та допомагає досягти найкращих результатів
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section> -->
+        <section class="services section" id="services">
+            <div class="container services__container">
+                <h2 class="title services__title">
+                    Чим я можу вам допомогти:
+                </h2>
+                <div class="services__inner">
+                    <div class="services__info">
+                        <h3 class="services__subtitle">
+                            Реабілітація після інсульту та черепно-мозкових травм
+                        </h3>
+                        <p class="services__description">
+                            Відновлення ходи, координації та балансу. Нормалізація тонусу мʼязів та діапазону рухів.
+                            Подолання push-синдрому та ниглекту
+                        </p>
+                        <h3 class="services__subtitle">
+                            Нейрореабілітація
+                        </h3>
+                        <p class="services__text">
+                            Комплексна фізична терапія для пацієнтів із:
+                        </p>
+                        <ul class="services__list">
+                            <li class="services__item">
+                                <h4 class="services__subheading">
+                                    розсіяним склерозом,
+                                </h4>
+                            </li>
+                            <li class="services__item">
+                                <h4 class="services__subheading">
+                                    бічним аміотрофічним склерозом,
+                                </h4>
+                            </li>
+                            <li class="services__item">
+                                <h4 class="services__subheading">
+                                    хворобою Паркінсона,
+                                </h4>
+                            </li>
+                            <li class="services__item">
+                                <h4 class="services__subheading">
+                                    полінейропатіями різного походження,
+                                </h4>
+                            </li>
+                            <li class="services__item">
+                                <h4 class="services__subheading">
+                                    пошкодженнями периферичної нервової системи.
+                                </h4>
+                            </li>
+                        </ul>
+                        <p class="services__description">
+                            Підхід спрямований на покращення рухливості, координації, зменшення симптомів та покращення
+                            якості життя.
+                        </p>
+                    </div>
+                    <a class="link services__link" href="https://t.me/PT_Alona">
+                        Записатись на консультацію
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="faq section" id="faq">
+            <div class="faq__bg" style="background-image: url('./images/bg.png');">
+                <h2 class="title faq__title">
+                    Відповіді на часті <br> запитання:
+                </h2>
+            </div>
+            <div class="container faq__container">
+                <div class="faq__inner">
+                    <ul class="faq__list">
+                        <li class="faq__item">
+                            <h3 class="faq__question">
+                                Яка тривалість заняття?
+                            </h3>
+                            <p class="faq__answer">
+                                Заняття триває 45-60 хвилин.
+                            </p>
+                        </li>
+                        <li class="faq__item">
+                            <h3 class="faq__question">
+                                Чи обовʼязково проводити заняття щодня?
+                            </h3>
+                            <p class="faq__answer">
+                                Ні, це не обовʼязково. Кількість та частота занять індивідуальна для кожного. Тож
+                                плануємо
+                                заняття зважаючи на всі нюанси.
+                            </p>
+                        </li>
+                        <li class="faq__item">
+                            <h3 class="faq__question">
+                                Чи потрібно купувати якесь устаткування для занять?
+                            </h3>
+                            <p class="faq__answer">
+                                Необхідне устаткування я беру з собою на заняття, тому вам купувати не потрібно
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="faq__info">
+                        <p class="faq__text">
+                            Не знайшли потрібної відповіді?
+                        </p>
+                        <a class="link faq__link" href="https://t.me/PT_Alona">
+                            Написати в телеграм
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="posts section">
+            <h2 class="title">
+                Підпишіться, щоб не загубити
+            </h2>
+            <a class="link posts__link" href="#" id="instagram">
+                Instagram
+            </a>
+            <div class="posts__inner">
+                <div class="container">
+                    <h2 class="visually-hidden">
+                        Актуальні питання здоров'я
+                    </h2>
+                    <ul class="posts__list">
+                        <li class="posts__item">
+                            <article class="card-post">
+                                <h2 class="visually-hidden">
+                                    Інсульт у молодих людей
+                                </h2>
+                                <a class="card-post__link card-post__link--long" href="https://www.instagram.com/reel/DB_r1m_Mn90/?igsh=MXcwMGRiZW5wdmE5bA== 
+                                " style="background-image: url('./images/posts/brain.png');">
+                                    <span class="visually-hidden">
+                                        Перехід в інстаграм Поштаренко Альони
+                                    </span>
+                                </a>
+                            </article>
+                        </li>
+                        <li class="posts__item">
+                            <article class="card-post">
+                                <h2 class="visually-hidden">
+                                    Система постурального
+                                    контролю
+                                </h2>
+                                <a class="card-post__link card-post__link--short" href="https://www.instagram.com/reel/DB_r1m_Mn90/?igsh=MXcwMGRiZW5wdmE5bA== 
+                                " style="background-image: url('./images/posts/postrualControl.png');">
+                                    <span class="visually-hidden">
+                                        Перехід в інстаграм Поштаренко Альони
+                                    </span>
+                                </a>
+                            </article>
+                        </li>
+                        <li class="posts__item">
+                            <article class="card-post">
+                                <h2 class="visually-hidden">
+                                    Бічний аміотрофічний
+                                    склероз
+                                </h2>
+                                <a class="card-post__link card-post__link--average" href="https://www.instagram.com/reel/DB_r1m_Mn90/?igsh=MXcwMGRiZW5wdmE5bA== 
+                                " style="background-image: url('./images/posts/hand.png');">
+                                    <span class="visually-hidden">
+                                        Перехід в інстаграм Поштаренко Альони
+                                    </span>
+                                </a>
+                            </article>
+                        </li>
+                        <li class="posts__item">
+                            <article class="card-post">
+                                <h2 class="visually-hidden">
+                                    Рання вертикалізація та
+                                    початок реабілітації
+                                </h2>
+                                <a class="card-post__link card-post__link--small" href="https://www.instagram.com/reel/DB_r1m_Mn90/?igsh=MXcwMGRiZW5wdmE5bA== 
+                                " style="background-image: url('./images/posts/rehabilitationAfterStroke.png');">
+                                    <span class="visually-hidden">
+                                        Перехід в інстаграм Поштаренко Альони
+                                    </span>
+                                </a>
+                            </article>
+                        </li>
+                        <li class="posts__item">
+                            <article class="card-post">
+                                <h2 class="visually-hidden">
+                                    Пацієнт після інсульту та
+                                    як забезпечити максимально безпечну реабілітацію
+                                </h2>
+                                <a class="card-post__link card-post__link--small" href="https://www.instagram.com/reel/DB_r1m_Mn90/?igsh=MXcwMGRiZW5wdmE5bA== 
+                                " style="background-image: url('./images/posts/stroke.png');">
+                                    <span class="visually-hidden">
+                                        Перехід в інстаграм Поштаренко Альони
+                                    </span>
+                                </a>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <nav class="footer__menu">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a class="footer__link" href="#about">
+                            Про мене
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#services">
+                            Чим я можу допомогти?
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#faq">
+                            Відповіді на часті запитання
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#instagram">
+                            Інстаграм
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <address class="footer__address">
+                <a class="footer__telephone" href="tel:+380934996922">
+                    +380 93 499 69 22
+                </a>
+            </address>
+            <p class="footer__copyright">
+                © 2024 Альона – фізичний терапевт. Всі права захищені.
+            </p>
+        </div>
+    </footer>
     <script src="js/main.min.js"></script>
 </body>
 
