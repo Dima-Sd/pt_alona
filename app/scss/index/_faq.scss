@@ -201,8 +201,18 @@
 @media (max-width: 550px) {
     .faq {
         &__title {
-            font-size: 30px;
-            padding: 52px 0 154px 26px;
+            font-size: 24px;
+            padding: 52px 0 154px 15px;
+        }
+
+        &__question {
+            font-size: 18px;
+            max-width: 257px;
+        }
+
+        &__answer {
+            font-size: 18px;
+            width: 100%;
         }
     }
 }

@@ -92,11 +92,18 @@
 
         &__list {
             grid-template-rows: 240px 53px 317px;
-            grid-template-columns: 215px 260px;
+            grid-template-columns: 166px 86px;
             padding-top: 50px;
+        }
+
+        &__title {
+            font-size: 30px;
         }
     }
 }
 
-
-
+@media (max-width: 500px) {
+    .posts__container {
+        padding: 0 30px;
+    }
+}

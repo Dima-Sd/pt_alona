@@ -104,5 +104,49 @@
         &__copyright {
             text-align: left;
         }
+
+        &__list {
+            gap: 15px;
+        }
+
+        &__link {
+            padding: 8px 0;
+            display: block;
+
+            &::before {
+                bottom: -16px;
+            }
+        }
+
+        &__address {
+            margin-bottom: 20px;
+        }
+
+        &__list {
+            margin-bottom: 30px;
+        }
+
+        &__container {
+            padding: 0 35px;
+        }
+
+        &__telephone {
+            padding: 7px 0;
+            display: block;
+
+            &::before {
+                bottom: -16px;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .footer__telephone {
+        font-size: 22px;
+    }
+
+    .footer__copyright {
+        font-size: 18px;
     }
 }
