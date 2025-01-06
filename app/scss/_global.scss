@@ -22,6 +22,10 @@ body {
     border-radius: 20px;
     transition: opacity 0.4s, outline 0.4s, opacity 0.4s;
 
+    &__img {
+        height: auto;
+    }
+
     &:hover {
         opacity: 0.6;
     }
@@ -51,19 +55,19 @@ body {
     font-size: 30px;
     background-color: $accent-opacity;
     border-radius: 20px;
-    outline: 3px solid $secondary;
-    transition: box-shadow 0.4s, outline-offset 0.4s, background-color 0.4s;
+    border: 3px solid $secondary;
+    transition: background-color 0.4s, box-shadow 0.4s, opacity 0.4s;
 
     &:hover {
-        box-shadow: 3px 3px 8px $dark-opacity;
+        background-color: $secondary;
     }
 
     &:focus {
-        outline-offset: 5px;
+        box-shadow: 8px 6px 12px rgba(39, 39, 39, .4);
     }
 
     &:active {
-        background-color: $secondary;
+        opacity: 0.7;
     }
 }
 
@@ -88,6 +92,10 @@ body {
 }
 
 @media (max-width: 864px) {
+    .section {
+        padding: 30px 0;
+    }
+
     .header__container {
         padding-left: 30px;
         padding-right: 0;
@@ -100,7 +108,14 @@ body {
 }
 
 @media (max-width: 470px) {
+
+    .logo {
+        width: 134px;
+        margin-right: 30px;
+    }
+
     .title {
         font-size: 25px;
     }
+
 }
